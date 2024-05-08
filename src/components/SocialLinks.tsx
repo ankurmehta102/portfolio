@@ -7,7 +7,7 @@ function SocialLinks() {
   return (
     <section
       id="social-links"
-      className={`flex h-full  w-2/6 items-center justify-end`}
+      className={`flex w-full items-center justify-center`}
     >
       <Icon link="https://www.linkedin.com/in/ankur9517/">
         <FaLinkedinIn className=" h-full w-full " />

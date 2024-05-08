@@ -3,7 +3,7 @@ import Text from "./Text";
 
 function ProfileInfo() {
   return (
-    <section id="info" className={`flex w-5/6 items-center fold:w-4/6`}>
+    <section id="info" className={`flex  items-center`}>
       <div
         id="profile-pic"
         className={` h-10 w-10 overflow-hidden rounded-full bg-white  laptop:h-14 laptop:w-14 `}

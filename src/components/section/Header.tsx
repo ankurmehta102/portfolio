@@ -1,8 +1,8 @@
-import ProfileInfo from "./ProfileInfo";
+import ProfileInfo from "../ui/ProfileInfo";
 
 function ProfileSection() {
   return (
-    <header className={`flex w-full items-center justify-between px-3`}>
+    <header className={` w-full px-3`}>
       <ProfileInfo />
     </header>
   );

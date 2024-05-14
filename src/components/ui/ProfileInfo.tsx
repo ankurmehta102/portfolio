@@ -1,12 +1,13 @@
 import Profile from "/images/profile.jpg";
 import Text from "./Text";
+import Heading from "./Heading";
 
 function ProfileInfo() {
   return (
     <section id="info" className={`flex  items-center`}>
       <div
         id="profile-pic"
-        className={` h-10 w-10 overflow-hidden rounded-full bg-white  laptop:h-14 laptop:w-14 `}
+        className={` h-14 w-14 overflow-hidden rounded-full `}
       >
         <img
           src={Profile}
@@ -18,8 +19,8 @@ function ProfileInfo() {
         id="name-section"
         className={` ml-1  flex h-full flex-col justify-center text-left fold:ml-2 laptop:ml-4 `}
       >
-        <Text size="large">Ankur Mehta</Text>
-        <Text size="small" isLight={true}>
+        <Heading variant="SubHeading">Ankur Mehta</Heading>
+        <Text liteText={true} className="mt-1">
           Full Stack Developer
         </Text>
       </div>

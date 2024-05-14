@@ -9,7 +9,7 @@ interface CardProps {
 function Card({ projectTitle, description, logo }: CardProps) {
   return (
     <div
-      className={`mb-6 flex w-full cursor-pointer items-center justify-between rounded-md p-2 transition-all hover:backdrop-brightness-200`}
+      className={`mb-2  flex w-full cursor-pointer items-center justify-between rounded-md  py-1 pl-3 pr-2 transition-all hover:backdrop-brightness-200`}
     >
       <TextSection projectTitle={projectTitle} description={description} />
       <LogoSection logo={logo} />
@@ -24,12 +24,10 @@ function TextSection({
   return (
     <div
       id="text-container"
-      className=" flex  w-3/6  flex-col justify-center  p-1 text-left mobile:w-4/6"
+      className=" flex  w-3/6  flex-col justify-center   text-left mobile:w-4/6"
     >
-      <Text size="large">{projectTitle}</Text>
-      <Text size="small" isLight={true}>
-        {description}
-      </Text>
+      <h1 className="mb-1 text-xl font-bold text-white">{projectTitle}</h1>
+      <Text liteText={true}>{description}</Text>
     </div>
   );
 }
@@ -40,7 +38,7 @@ function LogoSection({ logo }: Pick<CardProps, "logo">) {
       id="image-section"
       className="m-2 flex w-3/6 items-center justify-end mobile:w-2/6  "
     >
-      <div className="h-24 w-24 laptop:h-28 laptop:w-28">
+      <div className="h-18 w-18 laptop:h-28 laptop:w-28">
         <img
           src={logo}
           alt=""

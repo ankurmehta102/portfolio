@@ -11,6 +11,10 @@ export default {
       },
       fontFamily: {
         Comfortaa: ["Comfortaa", "sans-serif"],
+        // Roboto: ["Roboto", "sans-serif"],
+        Primary: ["Oswald", "sans-serif"],
+        // Secondary: ["Quattrocento", "serif"],
+        Secondary: ["Quattrocento Sans", "sans-serif"],
       },
       screens: {
         laptop: "500px",
@@ -18,8 +22,11 @@ export default {
         fold: "281px",
       },
       colors: {
-        white: "#F8FAFC",
+        // white: "#F8FAFC",
         grey: "#94A3B8",
+        white: "#d1d0ce",
+        background: "#151517",
+        backgroundSecondary: "#1e1e20",
       },
       fontSize: {
         sm: "0.875rem",

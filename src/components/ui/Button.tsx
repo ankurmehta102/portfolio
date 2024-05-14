@@ -6,7 +6,7 @@ function Button({ children }: ButtonProps) {
   return (
     <button
       id="resume"
-      className="rounded bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-4 py-2  text-sm font-extrabold hover:from-amber-500 hover:via-amber-600 hover:to-amber-700"
+      className="rounded bg-white  px-3  py-1 text-lg font-bold hover:brightness-90"
     >
       {children}
     </button>

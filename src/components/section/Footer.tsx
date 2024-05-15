@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div
       id="footer"
-      className=" mb-2 mt-10 flex w-full flex-col border-t border-slate-700 px-3 pt-4"
+      className=" mb-2  flex w-full flex-col border-t border-slate-700 px-3 pt-4"
     >
       <SocialLinks />
       <a href="" className="mt-2">

@@ -4,11 +4,11 @@ import Projects from "../components/section/Projects";
 
 function HomePage() {
   return (
-    <>
+    <div className="">
       <Header />
       <Bio />
       <Projects />
-    </>
+    </div>
   );
 }
 

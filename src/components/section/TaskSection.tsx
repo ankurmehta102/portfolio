@@ -1,8 +1,9 @@
 import Task from "../ui/Task";
 import Heading from "../ui/Heading";
+import { TaskHeading } from "../../types";
 
 interface TaskSectionProps {
-  heading: string;
+  heading: TaskHeading;
   taskData: any[];
 }
 
@@ -11,7 +12,7 @@ function TaskSection({ heading, taskData }: TaskSectionProps) {
     <section id="task-section" className="mt-10">
       <Heading variant="SubHeading">{heading}</Heading>
       {taskData.map((data) => (
-        <Task data={data} />
+        <Task key={data.id} data={data} />
       ))}
     </section>
   );

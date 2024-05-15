@@ -1,19 +1,23 @@
+import { Link } from "react-router-dom";
 import Text from "./Text";
 
 interface CardProps {
   projectTitle: string;
   description: string;
   logo: string;
+  path: string;
 }
 
-function Card({ projectTitle, description, logo }: CardProps) {
+function Card({ projectTitle, description, logo, path }: CardProps) {
   return (
-    <div
-      className={`mb-2  flex w-full cursor-pointer items-center justify-between rounded-md  py-1 pl-3 pr-2 transition-all hover:backdrop-brightness-200`}
-    >
-      <TextSection projectTitle={projectTitle} description={description} />
-      <LogoSection logo={logo} />
-    </div>
+    <Link to={path}>
+      <div
+        className={`mb-2  flex w-full cursor-pointer items-center justify-between rounded-md  py-1 pl-3 pr-2 transition-all hover:backdrop-brightness-200`}
+      >
+        <TextSection projectTitle={projectTitle} description={description} />
+        <LogoSection logo={logo} />
+      </div>
+    </Link>
   );
 }
 

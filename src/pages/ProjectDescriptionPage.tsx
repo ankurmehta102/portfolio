@@ -1,23 +1,28 @@
 import ProjectInfo from "../components/section/ProjectInfo";
 import TaskSection from "../components/section/TaskSection";
 import TechStack from "../components/section/TechStack";
-import { AdminPortalData } from "../data";
+import useFetchData from "../hooks/useFetchData";
+import { TaskHeading } from "../types";
 
 function ProjectDescriptionPage() {
-  const taskHeading = AdminPortalData.achievements
-    ? "Achievements"
-    : "Features";
+  const [projectData] = useFetchData();
 
-  const taskData = AdminPortalData.achievements;
+  const taskSectionHeading = projectData.achievements
+    ? TaskHeading.ACHIEVEMENTS
+    : TaskHeading.FEATURES;
+  const taskData = projectData.achievements || projectData.features;
+
   return (
-    <div className="px-3">
-      <ProjectInfo
-        title={AdminPortalData.title}
-        description={AdminPortalData.description}
-      />
-      <TechStack techStack={AdminPortalData.techStack} />
-      <TaskSection heading={taskHeading} taskData={taskData} />
-    </div>
+    projectData.title && (
+      <div className="px-3">
+        <ProjectInfo
+          title={projectData.title}
+          description={projectData.description}
+        />
+        <TechStack techStack={projectData.techStack} />
+        <TaskSection heading={taskSectionHeading} taskData={taskData} />
+      </div>
+    )
   );
 }
 

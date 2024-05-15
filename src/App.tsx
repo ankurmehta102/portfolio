@@ -1,12 +1,10 @@
 import MainLayout from "./components/layout/MainLayout";
-import ProjectDescriptionPage from "./pages/ProjectDescriptionPage";
-import HomePage from "./pages/HomePage";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <MainLayout>
-      {/* <HomePage /> */}
-      <ProjectDescriptionPage />
+      <Outlet />
     </MainLayout>
   );
 }

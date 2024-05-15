@@ -13,9 +13,11 @@ function Projects() {
       <div className="">
         {CardDetails.map((card) => (
           <Card
+            key={card.id}
             projectTitle={card.projectTitle}
             description={card.description}
             logo={card.logo}
+            path={card.path}
           />
         ))}
       </div>

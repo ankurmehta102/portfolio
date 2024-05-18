@@ -9,6 +9,7 @@ export const AdminPortalData = {
     "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  link: "",
   achievements: [
     {
       taskHeading: "1. Kiosk Maintenance System",
@@ -36,6 +37,7 @@ export const orderManagementData = {
     "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  link: "",
   achievements: [
     {
       taskHeading: "1. Kiosk Maintenance System",
@@ -63,6 +65,7 @@ export const ImageGalleryData = {
     "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  link: "http://google.com",
   features: [
     {
       taskDescription: [

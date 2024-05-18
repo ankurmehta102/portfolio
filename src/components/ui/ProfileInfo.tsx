@@ -17,7 +17,7 @@ function ProfileInfo() {
       </div>
       <div
         id="name-section"
-        className={` ml-1  flex h-full flex-col justify-center text-left fold:ml-2 laptop:ml-4 `}
+        className={` ml-2 flex h-full flex-col justify-center text-left`}
       >
         <Heading variant="SubHeading">Ankur Mehta</Heading>
         <Text liteText={true} className="mt-1">

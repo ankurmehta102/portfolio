@@ -3,8 +3,6 @@ import TaskSection from "../components/section/TaskSection";
 import TechStack from "../components/section/TechStack";
 import useFetchData from "../hooks/useFetchData";
 import { TaskHeading } from "../types";
-import { IoMdArrowRoundBack } from "react-icons/io";
-import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
@@ -20,7 +18,7 @@ function ProjectDescriptionPage() {
   return (
     projectData.title && (
       <div className="px-3 ">
-        <div className="pointer flex w-full cursor-pointer justify-end">
+        <div className="pointer flex w-full cursor-pointer justify-end hover:brightness-90">
           <IoArrowBackCircle
             className="h-12 w-12 font-black text-grey"
             onClick={() => {

@@ -9,13 +9,21 @@ interface ProjectInfoProps {
 }
 
 function ProjectInfo({ title, description, link }: ProjectInfoProps) {
+  const handleClick = () => {
+    console.log("Github button clicked.");
+    window.open(link, "_blank");
+  };
   return (
     <section id="project-info">
       <Heading variant="Heading">{title}</Heading>
       <Text liteText={true} className="mt-2 leading-height-3">
         {description}
       </Text>
-      {link && <Button className="mt-2">Github</Button>}
+      {link && (
+        <Button className="mt-2" onClick={handleClick}>
+          Github
+        </Button>
+      )}
     </section>
   );
 }

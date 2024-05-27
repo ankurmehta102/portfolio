@@ -32,7 +32,7 @@ export const AdminPortalData = {
 };
 export const orderManagementData = {
   id: 2,
-  title: "Order Management Data",
+  title: "Order Management System",
   description:
     "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
   techStack:
@@ -65,7 +65,7 @@ export const ImageGalleryData = {
     "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
-  link: "http://google.com",
+  link: "https://github.com/ankurmehta102/image-gallery-backend",
   features: [
     {
       taskDescription: [

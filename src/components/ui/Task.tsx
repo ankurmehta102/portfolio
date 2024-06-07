@@ -12,7 +12,7 @@ function Task({
   data: { taskHeading, taskDescription, taskImage },
 }: TaskProps) {
   return (
-    <div className=" mt-2">
+    <div className=" mt-3">
       <ul className="list-inside list-disc  text-grey">
         {" "}
         {taskHeading && (
@@ -24,7 +24,11 @@ function Task({
           </Text>
         ))}
       </ul>
-      {taskImage && <img src={taskImage} alt="" className=" w-full" />}
+      {taskImage && (
+        <div className="aspect-[2/0.9] w-full bg-red-500">
+          <img src={taskImage} alt="" className="h-full w-full" />
+        </div>
+      )}
     </div>
   );
 }

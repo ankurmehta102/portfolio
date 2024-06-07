@@ -5,7 +5,7 @@ interface IconProps {
 
 function Icon({ children, link }: IconProps) {
   return (
-    <a href={link} className={`mr-4 h-4 w-4 text-white hover:text-slate-400 `}>
+    <a href={link} className={`mr-4  text-white hover:text-slate-400 `}>
       {children}
     </a>
   );

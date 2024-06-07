@@ -10,11 +10,11 @@ function Heading({ className, children, variant, ...props }: HeadingProps) {
 
   switch (variant) {
     case "Heading":
-      Size = "text-4xl";
+      Size = "laptop:text-4xl text-3xl";
       break;
 
     case "SubHeading":
-      Size = "text-3xl";
+      Size = "laptop:text-3xl text-2xl";
       break;
 
     default:

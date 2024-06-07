@@ -9,15 +9,15 @@ interface TextProps extends HTMLAttributes<HTMLHeadingElement> {
 function Text({ children, liteText = false, className, ...props }: TextProps) {
   const colorClass = liteText ? "text-grey" : "text-white";
   return (
-    <h1
+    <p
       className={twMerge(
-        `text-xl font-bold font-medium leading-height-2 tracking-wide ${colorClass}`,
+        `text-sm font-medium leading-height-2 tracking-wide laptop:text-xl ${colorClass}`,
         className,
       )}
       {...props}
     >
       {children}
-    </h1>
+    </p>
   );
 }
 

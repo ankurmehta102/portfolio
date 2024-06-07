@@ -5,11 +5,14 @@ function Footer() {
   return (
     <div
       id="footer"
-      className=" mb-2  flex w-full flex-col border-t border-slate-700 px-3 pt-4"
+      className="  flex w-full flex-col border-t border-slate-700 px-3 pt-4"
     >
       <SocialLinks />
       <a href="" className="mt-2">
-        <Text liteText={false} className="text-sm  hover:text-slate-400">
+        <Text
+          liteText={false}
+          className="hover:text-slate-400   laptop:text-sm"
+        >
           ankurmehta9517@gmail.com
         </Text>
       </a>

@@ -1,6 +1,7 @@
 import admin from "/images/admin.png";
 import orderManagement from "/images/order-management.png";
 import kioskSettings from "/images/kiosk_settings.png";
+import picSafe from "/images/pic_safe.png";
 
 export const AdminPortalData = {
   id: 1,
@@ -81,8 +82,7 @@ export const CardDetails = [
   {
     id: 1,
     projectTitle: "Admin Portal",
-    description:
-      "A tool to manage all the important operations of an e-commerce.",
+    description: "A web app to manage all critical e-commerce operations.",
     logo: admin,
     path: "projects/admin-portal",
   },
@@ -90,16 +90,16 @@ export const CardDetails = [
     id: 2,
     projectTitle: "Order Management System",
     description:
-      "A tool to manage all the important operations of an e-commerce.",
+      "A web application to oversee the complete order lifecycle, from initial placement to final fulfillment.",
     logo: orderManagement,
     path: "projects/order-management",
   },
   {
     id: 3,
-    projectTitle: "Admin Portal",
+    projectTitle: "PicSafe",
     description:
-      "A tool to manage all the important operations of an e-commerce.",
-    logo: admin,
+      "A desktop application for efficient image storage and management.",
+    logo: picSafe,
     path: "projects/image-gallery",
   },
 ];

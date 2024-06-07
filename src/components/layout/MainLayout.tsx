@@ -3,9 +3,9 @@ import Footer from "../section/Footer";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-screen w-full justify-center pt-8">
+    <div className="flex min-h-screen w-full justify-center pt-6">
       <div className="flex w-full max-w-[740px] flex-col items-center justify-center">
-        <div className="min-h-[calc(100%-60px)] ">{children}</div>
+        <div className="min-h-[calc(100%-73px)] ">{children}</div>
 
         <Footer />
       </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ProjectInfo from "../components/section/ProjectInfo";
 import TaskSection from "../components/section/TaskSection";
 import TechStack from "../components/section/TechStack";
@@ -10,6 +11,10 @@ function ProjectDescriptionPage() {
   const [projectData] = useFetchData();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   const taskSectionHeading = projectData.achievements
     ? TaskHeading.ACHIEVEMENTS
     : TaskHeading.FEATURES;
@@ -20,7 +25,8 @@ function ProjectDescriptionPage() {
       <div className="px-3 ">
         <div className="pointer flex w-full cursor-pointer justify-end hover:brightness-90">
           <IoArrowBackCircle
-            className="h-12 w-12 font-black text-grey"
+            className="font-black text-grey"
+            size={40}
             onClick={() => {
               navigate("/", { replace: true });
             }}

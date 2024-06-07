@@ -17,10 +17,12 @@ function ProfileInfo() {
       </div>
       <div
         id="name-section"
-        className={` ml-2 flex h-full flex-col justify-center text-left`}
+        className={` ml-2 mt-1 flex h-full flex-col justify-center text-left`}
       >
-        <Heading variant="SubHeading">Ankur Mehta</Heading>
-        <Text liteText={true} className="mt-1">
+        <Heading variant="SubHeading" className="">
+          Ankur Mehta
+        </Heading>
+        <Text liteText={true} className="text-base">
           Full Stack Developer
         </Text>
       </div>

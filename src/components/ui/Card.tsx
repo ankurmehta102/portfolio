@@ -31,7 +31,9 @@ function TextSection({
       className=" flex  w-3/6  flex-col justify-center   text-left mobile:w-4/6"
     >
       <h1 className="mb-1 text-xl font-bold text-white">{projectTitle}</h1>
-      <Text liteText={true}>{description}</Text>
+      <Text liteText={true} className="text-base">
+        {description}
+      </Text>
     </div>
   );
 }

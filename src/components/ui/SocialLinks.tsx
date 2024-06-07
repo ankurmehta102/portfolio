@@ -10,13 +10,13 @@ function SocialLinks() {
       className={`flex w-full items-center justify-start`}
     >
       <Icon link="https://www.linkedin.com/in/ankur9517/">
-        <FaLinkedinIn className=" h-full w-full " />
+        <FaLinkedinIn size={20} />
       </Icon>
       <Icon link="https://github.com/ankurmehta102">
-        <FaGithub className=" h-full w-full " />
+        <FaGithub size={20} />
       </Icon>
       <Icon link="https://twitter.com/ankurmehta01">
-        <FaXTwitter className=" h-full w-full " />
+        <FaXTwitter size={20} />
       </Icon>
     </section>
   );

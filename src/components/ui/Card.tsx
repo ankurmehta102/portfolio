@@ -24,7 +24,7 @@ function Card({ projectTitle, description, logo, path }: CardProps) {
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className={`after:hover:bg-darkGrey  before:bg-test relative  mb-2  flex w-full cursor-pointer items-center justify-between overflow-hidden rounded-md py-1 pl-3 pr-2 before:absolute before:left-[var(--x)]  before:top-[var(--y)] before:h-[350px] before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:opacity-0 after:absolute after:inset-0.5 after:z-0 after:rounded-md after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:duration-[250ms]`}
+        className={`before:bg-radial-gradient  relative mb-2  flex  w-full cursor-pointer items-center justify-between overflow-hidden rounded-md py-1 pl-3 pr-2 before:absolute before:left-[var(--x)] before:top-[var(--y)]  before:h-[350px] before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:opacity-0 after:absolute after:inset-0.5 after:z-0 after:rounded-md after:opacity-70 after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:bg-background after:hover:duration-[250ms]`}
       >
         <TextSection projectTitle={projectTitle} description={description} />
         <LogoSection logo={logo} />

@@ -6,6 +6,7 @@ import useFetchData from "../hooks/useFetchData";
 import { TaskHeading } from "../types";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function ProjectDescriptionPage() {
   const [projectData] = useFetchData();
@@ -22,7 +23,12 @@ function ProjectDescriptionPage() {
 
   return (
     projectData.title && (
-      <div className="px-3 ">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2, ease: "easeOut", delay: 0.1 }}
+        className="px-3 "
+      >
         <div className="pointer flex w-full cursor-pointer justify-end hover:brightness-90">
           <IoArrowBackCircle
             className="font-black text-grey"
@@ -39,7 +45,7 @@ function ProjectDescriptionPage() {
         />
         <TechStack techStack={projectData.techStack} />
         <TaskSection heading={taskSectionHeading} taskData={taskData} />
-      </div>
+      </motion.div>
     )
   );
 }

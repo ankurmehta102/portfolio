@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
 
 function Bio() {
@@ -17,6 +18,9 @@ function Bio() {
 
       <div className="flex w-full items-center justify-start">
         <Button>Resume</Button>
+        <div className="ml-5">
+          <SocialLinks />
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div
+    <motion.div
       id="footer"
       className="  flex w-full flex-col border-t border-slate-700 px-3 pt-4"
     >
@@ -16,7 +17,7 @@ function Footer() {
           ankurmehta9517@gmail.com
         </Text>
       </a>
-    </div>
+    </motion.div>
   );
 }
 

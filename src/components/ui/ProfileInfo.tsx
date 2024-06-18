@@ -7,7 +7,7 @@ function ProfileInfo() {
     <section id="info" className={`flex  items-center`}>
       <div
         id="profile-pic"
-        className={` h-14 w-14 overflow-hidden rounded-full `}
+        className={` h-14 w-14 overflow-hidden rounded-full border-[1px] border-white`}
       >
         <img
           src={Profile}

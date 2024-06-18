@@ -19,9 +19,11 @@ export default {
         fold: "281px",
       },
       colors: {
-        grey: "#94A3B8",
+        // grey: "#94A3B8",
+        grey: "#9CA3AF",
         white: "#d1d0ce",
-        background: "#151517",
+        // background: "#151517",
+        background: "#000000",
       },
       fontSize: {
         sm: "0.875rem",

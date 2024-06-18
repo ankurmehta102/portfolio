@@ -4,13 +4,13 @@ import { CardDetails } from "../../data";
 
 function Projects() {
   return (
-    <div className="mt-5 flex w-full flex-col ">
+    <div className=" mt-10 flex w-full flex-col">
       <div className="w-full pl-3">
         <Heading variant="SubHeading" className="mb-2">
           Projects
         </Heading>
       </div>
-      <div className="">
+      <div className="px-1">
         {CardDetails.map((card) => (
           <Card
             key={card.id}

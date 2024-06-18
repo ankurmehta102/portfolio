@@ -11,7 +11,7 @@ function Text({ children, liteText = false, className, ...props }: TextProps) {
   return (
     <p
       className={twMerge(
-        `text-sm font-medium leading-height-2 tracking-wide laptop:text-xl ${colorClass}`,
+        `text-base font-medium leading-height-2 tracking-wide laptop:text-xl ${colorClass}`,
         className,
       )}
       {...props}

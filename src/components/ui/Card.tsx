@@ -24,7 +24,7 @@ function Card({ projectTitle, description, logo, path }: CardProps) {
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className={`relative  mb-2 flex  w-full  cursor-pointer items-center justify-between overflow-hidden rounded-md py-1 pl-3 pr-2 before:absolute before:left-[var(--x)] before:top-[var(--y)] before:h-[350px]  before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:bg-radial-gradient before:opacity-0 after:absolute after:inset-0.5 after:z-0 after:rounded-md after:opacity-70 after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:bg-background after:hover:duration-[250ms]`}
+        className={`relative mb-2  flex w-full  cursor-pointer items-center justify-between overflow-hidden rounded-md bg-[#131315]  px-3 py-3  before:absolute before:left-[var(--x)] before:top-[var(--y)] before:h-[350px]  before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:bg-radial-gradient before:opacity-0 after:absolute after:inset-0.5 after:z-0 after:rounded-md after:opacity-70 after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:bg-[#131315] after:hover:duration-[250ms]`}
       >
         <TextSection projectTitle={projectTitle} description={description} />
         <LogoSection logo={logo} />
@@ -40,9 +40,11 @@ function TextSection({
   return (
     <div
       id="text-container"
-      className=" z-10  flex w-3/6  flex-col justify-center   text-left mobile:w-4/6"
+      className=" z-10 flex w-3/4 flex-col justify-center text-left"
     >
-      <h1 className="mb-1 text-xl font-bold text-white">{projectTitle}</h1>
+      <h1 className="text-md mb-1 font-bold text-white min-[380px]:text-xl">
+        {projectTitle}
+      </h1>
       <Text liteText={true} className="text-base">
         {description}
       </Text>
@@ -52,11 +54,8 @@ function TextSection({
 
 function LogoSection({ logo }: Pick<CardProps, "logo">) {
   return (
-    <div
-      id="image-section"
-      className="z-10 m-2 flex w-3/6 items-center justify-end mobile:w-2/6  "
-    >
-      <div className="h-18 w-18 laptop:h-28 laptop:w-28">
+    <div id="image-section" className="z-10  flex  items-center justify-end  ">
+      <div className=" h-28 w-28 ">
         <img
           src={logo}
           alt=""

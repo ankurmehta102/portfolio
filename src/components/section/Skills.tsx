@@ -3,11 +3,11 @@ import { SkillsData } from "../../data";
 
 function Skills() {
   return (
-    <section className="mb-3 mt-10 px-3">
+    <section className="mb-3 mt-10 w-full px-3">
       <Heading variant="SubHeading">Technical Skills</Heading>
       <div
         id="skills-icons"
-        className="mt-4 grid grid-cols-3 grid-rows-3 gap-x-0 gap-y-4 laptop:grid-cols-4"
+        className="mt-6 grid grid-cols-3 grid-rows-3 gap-y-8 min-[600px]:gap-x-16"
       >
         {SkillsData.map((skill) => {
           return (

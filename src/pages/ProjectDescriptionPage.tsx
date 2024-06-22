@@ -23,13 +23,19 @@ function ProjectDescriptionPage() {
 
   return (
     projectData.title && (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, ease: "easeOut", delay: 0.1 }}
-        className="px-3 "
-      >
-        <div className="pointer flex w-full cursor-pointer justify-end hover:brightness-90">
+      <motion.div className="px-3 ">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { duration: 0.5, delay: 1 },
+            },
+          }}
+          className="pointer flex w-full cursor-pointer justify-end hover:brightness-90"
+        >
           <IoArrowBackCircle
             className="font-black text-grey"
             size={40}
@@ -37,7 +43,7 @@ function ProjectDescriptionPage() {
               navigate("/", { replace: true });
             }}
           />
-        </div>
+        </motion.div>
         <ProjectInfo
           title={projectData.title}
           description={projectData.description}

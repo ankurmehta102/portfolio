@@ -1,6 +1,7 @@
 import Text from "../ui/Text";
 import Heading from "../ui/Heading";
 import Button from "../ui/Button";
+import { motion } from "framer-motion";
 
 interface ProjectInfoProps {
   title: string;
@@ -14,7 +15,16 @@ function ProjectInfo({ title, description, link }: ProjectInfoProps) {
     window.open(link, "_blank");
   };
   return (
-    <section id="project-info">
+    <motion.section
+      id="project-info"
+      initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+      }}
+    >
       <Heading variant="Heading">{title}</Heading>
       <Text liteText={true} className="mt-2 leading-height-3">
         {description}
@@ -24,7 +34,7 @@ function ProjectInfo({ title, description, link }: ProjectInfoProps) {
           Github
         </Button>
       )}
-    </section>
+    </motion.section>
   );
 }
 

@@ -1,4 +1,4 @@
-import Profile from "/images/profile.jpg";
+import Profile from "/images/profile.webp";
 import Text from "./Text";
 import Heading from "./Heading";
 

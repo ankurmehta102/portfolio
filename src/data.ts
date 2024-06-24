@@ -1,7 +1,7 @@
-import admin from "/images/admin.png";
-import orderManagement from "/images/order-management.png";
-import kioskSettings from "/images/kiosk_settings.png";
-import picSafe from "/images/pic_safe.png";
+import admin from "/images/admin.webp";
+import orderManagement from "/images/order-management.webp";
+import kioskSettings from "/images/kiosk_settings.webp";
+import picSafe from "/images/pic_safe.webp";
 import { SiNestjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiHtml5 } from "react-icons/si";

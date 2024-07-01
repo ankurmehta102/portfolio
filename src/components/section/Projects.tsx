@@ -5,7 +5,7 @@ import { CardDetails } from "../../data";
 function Projects() {
   return (
     <div className=" mt-10 flex w-full flex-col">
-      <div className="mb-4 w-full pl-3">
+      <div className="mb-1 w-full pl-3">
         <Heading variant="SubHeading">Projects</Heading>
       </div>
       <div className="px-1">

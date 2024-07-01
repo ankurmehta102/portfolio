@@ -3,18 +3,22 @@ import { SkillsData } from "../../data";
 
 function Skills() {
   return (
-    <section className="mb-3 mt-10 w-full px-3">
-      <Heading variant="SubHeading">Technical Skills</Heading>
+    <section className="mb-3 mt-10 w-full ">
+      <Heading variant="SubHeading" className="px-3">
+        Technical Skills
+      </Heading>
       <div
         id="skills-icons"
-        className="mt-6 grid grid-cols-3 grid-rows-3 gap-y-8 min-[600px]:gap-x-16"
+        className="mt-2 grid grid-cols-3  gap-2 px-2 laptop:px-1"
       >
         {SkillsData.map((skill) => {
           return (
-            <div className={`${skill.className} flex cursor-default text-grey`}>
+            <div
+              className={`${skill.className} flex cursor-default flex-col items-center justify-center rounded-md bg-[#131315]  py-6 text-grey`}
+            >
               {<skill.icon size={skill.iconSize} />}
-              <div className="ml-2 flex items-center">
-                <p className="text-sm font-medium leading-height-2 tracking-wide laptop:text-xl">
+              <div className=" flex items-center">
+                <p className="mt-2 text-sm font-medium leading-height-2 tracking-wide laptop:text-xl">
                   {skill.name}
                 </p>
               </div>

@@ -119,7 +119,7 @@ export const SkillsData = [
     name: "React.js",
     icon: FaReact,
     iconSize: 30,
-    className: "hover:text-[#61DBFB]",
+    className: "hover:text-[#61DBFB] col-span-2",
   },
   {
     id: "Redux.js",
@@ -133,14 +133,14 @@ export const SkillsData = [
     name: "Node.js",
     icon: SiNodedotjs,
     iconSize: 30,
-    className: "hover:text-green-500",
+    className: "hover:text-green-500 row-span-2",
   },
   {
     id: "Nest.js",
     name: "Nest.js",
     icon: SiNestjs,
     iconSize: 30,
-    className: "hover:text-red-500",
+    className: "hover:text-red-500 col-span-2",
   },
   {
     id: "MsSql",

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../section/Footer";
+// import Footer from "../section/Footer";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (

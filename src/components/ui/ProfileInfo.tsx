@@ -7,7 +7,7 @@ function ProfileInfo() {
     <section id="info" className={`flex  items-center`}>
       <div
         id="profile-pic"
-        className={` h-16 w-16 overflow-hidden rounded-full border-[2px] border-white`}
+        className={` h-14 w-14 overflow-hidden rounded-full border-[2px] border-white`}
       >
         <img
           src={Profile}
@@ -19,10 +19,10 @@ function ProfileInfo() {
         id="name-section"
         className={` ml-2 mt-1 flex h-full flex-col justify-center text-left`}
       >
-        <Heading variant="SubHeading" className="">
+        <Heading variant="SubHeading" className="laptop:text-2xl">
           Ankur Mehta
         </Heading>
-        <Text liteText={true} className="text-base">
+        <Text liteText={true} className=" laptop:text-xl">
           Full Stack Developer
         </Text>
       </div>

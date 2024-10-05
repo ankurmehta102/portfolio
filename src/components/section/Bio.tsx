@@ -5,11 +5,13 @@ import Text from "../ui/Text";
 
 function Bio() {
   return (
-    <div className="mt-10 flex w-full flex-col items-center justify-center px-3">
+    <div className="flex w-full flex-col items-center justify-center">
       <div className="w-full ">
-        <Heading variant="SubHeading">About</Heading>
+        <Heading variant="SubHeading">
+          Building bussiness driven by design.
+        </Heading>
       </div>
-      <div className="mb-2">
+      <div className="my-2">
         <Text
           liteText={true}
           className="text-pretty text-base leading-height-3 tracking-normal"

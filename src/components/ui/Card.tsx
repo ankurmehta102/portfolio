@@ -45,7 +45,10 @@ function TextSection({
       <h1 className="text-md mb-1 font-bold text-white min-[380px]:text-xl">
         {projectTitle}
       </h1>
-      <Text liteText={true} className="text-base">
+      <Text
+        liteText={true}
+        className="text-balance text-base laptop:text-pretty"
+      >
         {description}
       </Text>
     </div>

@@ -12,7 +12,7 @@ function TaskSection({ heading, taskData }: TaskSectionProps) {
   return (
     <motion.section
       id="task-section"
-      className="mt-10"
+      className=" space-y-6"
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}

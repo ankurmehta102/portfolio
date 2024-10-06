@@ -5,7 +5,7 @@ export enum projectId {
 }
 
 export enum TaskHeading {
-  ACHIEVEMENTS = "ACHIEVEMENTS",
+  ACHIEVEMENTS = "Some of my achievements:",
   FEATURES = "FEATURES",
 }
 

@@ -10,7 +10,7 @@ function TechStack({ techStack }: TechStackProps) {
   return (
     <motion.section
       id="tech-stack"
-      className="mt-10"
+      className=""
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}

@@ -23,7 +23,7 @@ function ProjectDescriptionPage() {
 
   return (
     projectData.title && (
-      <motion.div className="px-3 ">
+      <motion.div className="space-y-10 px-3 ">
         <motion.div
           initial="hidden"
           animate="visible"

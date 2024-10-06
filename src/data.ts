@@ -24,18 +24,16 @@ export const AdminPortalData = {
     {
       taskHeading: "1. Kiosk Maintenance System",
       taskDescription: [
-        "Facilitates log collection.",
-        "Enables one-click application updates.",
-        "Utilized Firebase real-time database.",
+        `Our team managed over 400 kiosks across different stores. When clients reported issues, we had to manually request critical information like the kiosk's printer configuration, kiosk ID, and app version, which slowed down the debugging process.`,
+        `To address this, I developed an automated system that gathered the necessary kiosk details automatically. This streamlined the debugging process, reducing response time and increasing efficiency.`,
       ],
       taskImage: kioskSettings,
     },
     {
       taskHeading: "2. Email Based Password Reset",
       taskDescription: [
-        "Facilitates log collection.",
-        "Enables one-click application updates.",
-        "Utilized Firebase real-time database.",
+        `After the deployment of the production build, the client requested an additional feature: email-based password reset, without making any changes to the database.`,
+        `I implemented this feature using password hashing and JWT tokens. A JWT token is sent via email to allow users to securely reset their passwords, without requiring changes to the existing database structure.`,
       ],
     },
   ],
@@ -52,18 +50,16 @@ export const orderManagementData = {
     {
       taskHeading: "1. Kiosk Maintenance System",
       taskDescription: [
-        "Facilitates log collection.",
-        "Enables one-click application updates.",
-        "Utilized Firebase real-time database.",
+        `Our team managed over 400 kiosks across different stores. When clients reported issues, we had to manually request critical information like the kiosk's printer configuration, kiosk ID, and app version, which slowed down the debugging process.`,
+        `To address this, I developed an automated system that gathered the necessary kiosk details automatically. This streamlined the debugging process, reducing response time and increasing efficiency.`,
       ],
       taskImage: kioskSettings,
     },
     {
       taskHeading: "2. Email Based Password Reset",
       taskDescription: [
-        "Facilitates log collection.",
-        "Enables one-click application updates.",
-        "Utilized Firebase real-time database.",
+        `After the deployment of the production build, the client requested an additional feature: email-based password reset, without making any changes to the database.`,
+        `I implemented this feature using password hashing and JWT tokens. A JWT token is sent via email to allow users to securely reset their passwords, without requiring changes to the existing database structure.`,
       ],
     },
   ],

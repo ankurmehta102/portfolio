@@ -12,22 +12,32 @@ function Task({
   data: { taskHeading, taskDescription, taskImage },
 }: TaskProps) {
   return (
-    <div className=" mt-3">
-      <ul className="list-inside list-disc  text-grey">
-        {" "}
-        {taskHeading && (
-          <h1 className="text-xl font-bold text-white">{taskHeading}</h1>
-        )}
-        {taskDescription.map((listData) => (
-          <Text liteText={true} className="leading-height-3">
-            <li>{listData}</li>
-          </Text>
-        ))}
-      </ul>
-      {taskImage && (
-        <div className="aspect-[2/0.9] w-full bg-red-500">
-          <img src={taskImage} alt="" className="h-full w-full" />
-        </div>
+    <div className=" space-y-4 rounded bg-[#131315] p-4">
+      {" "}
+      {taskHeading ? (
+        <>
+          <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
+          <div className="space-y-6">
+            <Text liteText={true} className="">
+              <span className="font-extrabold text-white">
+                Problem Statement:
+              </span>{" "}
+              {taskDescription[0]}
+            </Text>
+            <Text liteText={true} className="">
+              <span className="font-extrabold text-white">Solution:</span>
+              {taskDescription[1]}
+            </Text>
+          </div>
+        </>
+      ) : (
+        <ul className="list-inside list-disc space-y-3 ">
+          {taskDescription.map((listData) => (
+            <Text liteText={true} className="leading-height-3">
+              <li>{listData}</li>
+            </Text>
+          ))}
+        </ul>
       )}
     </div>
   );

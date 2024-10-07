@@ -1,18 +1,21 @@
-import Task from "../ui/Task";
+// import Task from "../ui/Task";
 import Heading from "../ui/Heading";
 import { TaskHeading } from "../../types";
 import { motion } from "framer-motion";
+import Text from "../ui/Text";
+import { projectId } from "../../types";
 
 interface TaskSectionProps {
   heading: TaskHeading;
   taskData: any[];
+  Id: string;
 }
 
-function TaskSection({ heading, taskData }: TaskSectionProps) {
+function TaskSection({ heading, taskData, Id }: TaskSectionProps) {
   return (
     <motion.section
       id="task-section"
-      className=" space-y-6"
+      className=" space-y-4"
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -26,10 +29,62 @@ function TaskSection({ heading, taskData }: TaskSectionProps) {
       }}
     >
       <Heading variant="SubHeading">{heading}</Heading>
-      {taskData.map((data) => (
-        <Task key={data.id} data={data} />
-      ))}
+      <div className="space-y-8">
+        {taskData.map((data) =>
+          Id === projectId.admin ? (
+            <Task key={data.id} data={data} />
+          ) : (
+            <Feature key={data.id} data={data} />
+          ),
+        )}
+      </div>
     </motion.section>
+  );
+}
+
+interface TaskProps {
+  data: {
+    taskDescription: string[];
+    taskHeading?: string;
+    taskImage?: string;
+  };
+}
+
+const Feature = ({ data: { taskHeading, taskDescription } }: TaskProps) => {
+  return (
+    <div className=" space-y-4 rounded bg-[#131315] p-4">
+      {taskHeading && (
+        <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
+      )}
+      <ul className="space-y-3">
+        {taskDescription.map((listData) => (
+          <Text liteText={true} className="leading-height-3">
+            <li>{listData}</li>
+          </Text>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+function Task({ data: { taskHeading, taskDescription } }: TaskProps) {
+  return (
+    <div className=" space-y-4 rounded bg-[#131315] p-4">
+      {" "}
+      {taskHeading && (
+        <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
+      )}
+      <div className="space-y-6">
+        <Text liteText={true} className="">
+          <span className="font-extrabold text-white">Problem Statement:</span>{" "}
+          {taskDescription[0]}
+        </Text>
+        <Text liteText={true} className="">
+          <span className="font-extrabold text-white">Solution:</span>
+          {taskDescription[1]}
+        </Text>
+      </div>
+    </div>
   );
 }
 

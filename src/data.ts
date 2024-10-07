@@ -48,18 +48,20 @@ export const orderManagementData = {
   link: "",
   achievements: [
     {
-      taskHeading: "1. Kiosk Maintenance System",
+      taskHeading: "1. Notification system",
       taskDescription: [
-        `Our team managed over 400 kiosks across different stores. When clients reported issues, we had to manually request critical information like the kiosk's printer configuration, kiosk ID, and app version, which slowed down the debugging process.`,
-        `To address this, I developed an automated system that gathered the necessary kiosk details automatically. This streamlined the debugging process, reducing response time and increasing efficiency.`,
+        `Implemented a robust notification system using Firebase
+Realtime Database, leading to a 30% reduction in order
+fulfillment time.`,
       ],
       taskImage: kioskSettings,
     },
     {
-      taskHeading: "2. Email Based Password Reset",
+      taskHeading: "2. Cookie based authentication",
       taskDescription: [
-        `After the deployment of the production build, the client requested an additional feature: email-based password reset, without making any changes to the database.`,
-        `I implemented this feature using password hashing and JWT tokens. A JWT token is sent via email to allow users to securely reset their passwords, without requiring changes to the existing database structure.`,
+        `Enhanced site security by implementing HTTP-only
+cookie-based authentication, reducing the risk of XSS
+(cross-site scripting) attacks.`,
       ],
     },
   ],
@@ -75,9 +77,9 @@ export const ImageGalleryData = {
   features: [
     {
       taskDescription: [
-        "Facilitates log collection.",
-        "Enables one-click application updates.",
-        "Utilized Firebase real-time database.",
+        "1. CDN support.",
+        "2. User registration and bulk images upload support.",
+        "3. Role based authentication and authorization.",
       ],
     },
   ],

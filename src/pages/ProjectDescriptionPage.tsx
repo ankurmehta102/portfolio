@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function ProjectDescriptionPage() {
-  const [projectData] = useFetchData();
+  const [projectData, projectId] = useFetchData();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -50,7 +50,11 @@ function ProjectDescriptionPage() {
           link={projectData.link}
         />
         <TechStack techStack={projectData.techStack} />
-        <TaskSection heading={taskSectionHeading} taskData={taskData} />
+        <TaskSection
+          heading={taskSectionHeading}
+          taskData={taskData}
+          Id={projectId}
+        />
       </motion.div>
     )
   );

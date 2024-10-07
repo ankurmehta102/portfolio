@@ -15,7 +15,7 @@ function useFetchData() {
     fetchData();
   }, []);
 
-  return [projectData] as const;
+  return [projectData, projectId] as const;
 }
 
 export default useFetchData;

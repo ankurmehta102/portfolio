@@ -77,9 +77,9 @@ export const ImageGalleryData = {
   features: [
     {
       taskDescription: [
-        "1. CDN support.",
-        "2. User registration and bulk images upload support.",
-        "3. Role based authentication and authorization.",
+        "CDN support.",
+        "User registration and bulk images upload support.",
+        "Role based authentication and authorization.",
       ],
     },
   ],

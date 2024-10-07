@@ -26,7 +26,7 @@ function ProjectInfo({ title, description, link }: ProjectInfoProps) {
       }}
     >
       <Heading variant="Heading">{title}</Heading>
-      <Text liteText={true} className="mt-2 leading-height-3">
+      <Text liteText={true} className="mt-2 text-pretty leading-height-3">
         {description}
       </Text>
       {link && (

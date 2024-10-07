@@ -59,7 +59,7 @@ const Feature = ({ data: { taskHeading, taskDescription } }: TaskProps) => {
       <ul className="space-y-3">
         {taskDescription.map((listData) => (
           <Text liteText={true} className="leading-height-3">
-            <li>{listData}</li>
+            <li className="text-balance">{listData}</li>
           </Text>
         ))}
       </ul>

@@ -7,8 +7,8 @@ function Bio() {
   return (
     <div className="flex w-full flex-col items-center justify-center">
       <div className="w-full ">
-        <Heading variant="SubHeading">
-          Building bussiness driven by design.
+        <Heading variant="SubHeading" className="text-balance">
+          Building seamless web experiences from front to back.
         </Heading>
       </div>
       <div className="my-2">
@@ -16,8 +16,9 @@ function Bio() {
           liteText={true}
           className="text-pretty text-base leading-height-3 tracking-normal"
         >
-          Experienced Full-Stack Developer, 1.5 Years of Expertise in Innovative
-          and High-Quality Solution Development.
+          I’m a Full-Stack Developer with hands-on experience working on diverse
+          projects, ranging from web applications to desktop software
+          development.
         </Text>
       </div>
 

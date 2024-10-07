@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         Primary: ["Oswald", "sans-serif"],
-        Secondary: ["Quattrocento Sans", "sans-serif"],
+        Secondary: ["Quattrocento", "sans-serif"],
       },
       screens: {
         laptop: "500px",

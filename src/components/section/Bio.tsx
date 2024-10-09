@@ -4,6 +4,12 @@ import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
 
 function Bio() {
+  function handleResumeClick() {
+    window.open(
+      "https://drive.google.com/file/d/1qdmCh-CM7-RRiShYT8zDrOlMmYn2ofwg/view?usp=sharing",
+      "_blank",
+    );
+  }
   return (
     <div className="flex w-full flex-col items-center justify-center">
       <div className="w-full ">
@@ -23,7 +29,7 @@ function Bio() {
       </div>
 
       <div className="flex w-full items-center justify-start">
-        <Button>Resume</Button>
+        <Button onClick={handleResumeClick}>Resume</Button>
         <div className="ml-5">
           <SocialLinks />
         </div>

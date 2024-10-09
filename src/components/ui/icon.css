@@ -1,0 +1,36 @@
+.icon::before,
+.icon::after {
+  --scale: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 150ms transform;
+}
+
+.icon::before {
+  --translate-y: calc(-100% - 10px);
+  content: attr(data-tooltip);
+  color: black;
+  width: max-content;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  background: #d1d0ce;
+  transform-origin: bottom center;
+}
+
+.icon::after {
+  content: "";
+  --translate-y: calc(-100% - 14px);
+  border: 10px solid transparent;
+  border-top-color: #d1d0ce;
+  transform-origin: top center;
+}
+
+.icon:hover::before,
+.icon:hover::after {
+  --scale: 1;
+}

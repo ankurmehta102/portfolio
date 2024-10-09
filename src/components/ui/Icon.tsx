@@ -1,11 +1,20 @@
+import "./icon.css";
+
 interface IconProps {
   children: React.ReactNode;
   link: string;
+  tooltipText?: string;
+  target?: string;
 }
 
-function Icon({ children, link }: IconProps) {
+function Icon({ children, link, target, tooltipText }: IconProps) {
   return (
-    <a href={link} className={`mr-4  text-white hover:text-slate-400 `}>
+    <a
+      href={link}
+      target={target}
+      data-tooltip={tooltipText}
+      className={` ${tooltipText && "icon"}  relative text-white hover:text-slate-400 `}
+    >
       {children}
     </a>
   );

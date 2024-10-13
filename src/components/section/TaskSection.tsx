@@ -34,7 +34,11 @@ function TaskSection({ heading, taskData, Id }: TaskSectionProps) {
           Id === projectId.admin ? (
             <Task key={data.id} data={data} />
           ) : (
-            <Feature key={data.id} data={data} />
+            <Feature
+              key={data.id}
+              data={data}
+              listStyle={Id === projectId.gallery}
+            />
           ),
         )}
       </div>
@@ -48,18 +52,22 @@ interface TaskProps {
     taskHeading?: string;
     taskImage?: string;
   };
+  listStyle?: boolean;
 }
 
-const Feature = ({ data: { taskHeading, taskDescription } }: TaskProps) => {
+const Feature = ({
+  data: { taskHeading, taskDescription },
+  listStyle,
+}: TaskProps) => {
   return (
     <div className=" space-y-4 rounded bg-[#131315] p-4">
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
       )}
-      <ul className="space-y-3">
+      <ul className={`${listStyle && "list-inside  list-disc"} space-y-3`}>
         {taskDescription.map((listData) => (
           <Text liteText={true} className="leading-height-3">
-            <li className="text-balance">{listData}</li>
+            <li className={`text-balance`}>{listData}</li>
           </Text>
         ))}
       </ul>

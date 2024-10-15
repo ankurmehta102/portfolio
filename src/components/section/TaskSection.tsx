@@ -60,7 +60,7 @@ const Feature = ({
   listStyle,
 }: TaskProps) => {
   return (
-    <div className=" space-y-4 rounded bg-[#131315] p-4">
+    <div className=" bg-background-secondary space-y-4 rounded p-4">
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
       )}
@@ -77,7 +77,7 @@ const Feature = ({
 
 function Task({ data: { taskHeading, taskDescription } }: TaskProps) {
   return (
-    <div className=" space-y-4 rounded bg-[#131315] p-4">
+    <div className=" bg-background-secondary space-y-4 rounded p-4">
       {" "}
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>

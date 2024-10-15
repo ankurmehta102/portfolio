@@ -2,6 +2,7 @@ import Header from "../components/section/Header";
 import Bio from "../components/section/Bio";
 import Projects from "../components/section/Projects";
 import Skills from "../components/section/Skills";
+import Footer from "../components/section/Footer";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <Bio />
       <Projects />
       <Skills />
+      <Footer />
     </div>
   );
 }

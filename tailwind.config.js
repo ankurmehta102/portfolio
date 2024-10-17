@@ -44,7 +44,7 @@ export default {
         // "rg-background":
         //   "radial-gradient(circle at top center , rgba(19, 29, 66, 0.7) , transparent 40%)",
         "rg-background":
-          "radial-gradient(circle at top center, rgba(83, 196, 255, 0.2), transparent 30%)",
+          "radial-gradient(circle at top center, rgba(83, 196, 255, 0.2), transparent 65vh)",
       },
     },
   },

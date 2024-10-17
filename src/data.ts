@@ -104,8 +104,7 @@ export const CardDetails = [
   {
     id: 3,
     projectTitle: "PicSafe",
-    description:
-      "A desktop application for efficient image storage and management.",
+    description: "A set of APIs for efficient image storage and management.",
     logo: picSafe,
     path: "projects/image-gallery",
   },

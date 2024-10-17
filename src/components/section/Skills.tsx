@@ -11,7 +11,7 @@ function Skills() {
         {SkillsData.map((skill) => {
           return (
             <div
-              className={`${skill.className} flex  cursor-default flex-col items-center justify-center rounded-md bg-background-secondary py-6 text-grey`}
+              className={`${skill.className} border-border flex cursor-default flex-col items-center justify-center rounded-md border bg-background-secondary py-6 text-grey`}
             >
               {<skill.icon size={skill.iconSize} />}
               <div className=" flex items-center">

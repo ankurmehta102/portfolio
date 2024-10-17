@@ -60,11 +60,13 @@ const Feature = ({
   listStyle,
 }: TaskProps) => {
   return (
-    <div className=" bg-background-secondary space-y-4 rounded p-4">
+    <div className=" border-border space-y-4 rounded border bg-background-secondary p-4">
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
       )}
-      <ul className={`${listStyle && "list-inside  list-disc"} space-y-3`}>
+      <ul
+        className={`${listStyle && "list-outside  list-disc pl-2"} space-y-3`}
+      >
         {taskDescription.map((listData) => (
           <Text liteText={true} className="leading-height-3">
             <li className={`text-balance`}>{listData}</li>
@@ -77,7 +79,7 @@ const Feature = ({
 
 function Task({ data: { taskHeading, taskDescription } }: TaskProps) {
   return (
-    <div className=" bg-background-secondary space-y-4 rounded p-4">
+    <div className=" border-border space-y-4 rounded border bg-background-secondary p-4">
       {" "}
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>

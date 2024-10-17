@@ -23,8 +23,10 @@ export default {
         grey: "#9CA3AF",
         white: "#d1d0ce",
         // background: "#151517",
-        background: "#000000",
-        "background-secondary": "#131315",
+        background: "#0A0A0A",
+        // "background-secondary": "#131315",
+        "background-secondary": "#171717cc",
+        border: "#FFFFFF1a",
       },
       fontSize: {
         sm: "0.875rem",
@@ -38,9 +40,11 @@ export default {
       },
       backgroundImage: {
         "radial-gradient":
-          "radial-gradient(#d1d0ce3e, transparent, transparent)",
+          "radial-gradient(rgba(83, 196, 255, 0.2), transparent, transparent)",
+        // "rg-background":
+        //   "radial-gradient(circle at top center , rgba(19, 29, 66, 0.7) , transparent 40%)",
         "rg-background":
-          "radial-gradient(circle at top center , rgba(19, 29, 66, 0.7) , transparent 40%)",
+          "radial-gradient(circle at top center, rgba(83, 196, 255, 0.2), transparent 30%)",
       },
     },
   },

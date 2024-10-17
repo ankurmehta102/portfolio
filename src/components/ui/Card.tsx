@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Text from "./Text";
-import { MouseEvent, useRef } from "react";
+import { MouseEvent, useRef, useState } from "react";
 
 interface CardProps {
   projectTitle: string;
@@ -11,12 +11,12 @@ interface CardProps {
 
 function Card({ projectTitle, description, logo, path }: CardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
+  const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     if (cardRef.current) {
       let x = e.pageX - cardRef.current.offsetLeft;
       let y = e.pageY - cardRef.current.offsetTop;
-      cardRef.current.style.setProperty("--x", x + "px");
-      cardRef.current.style.setProperty("--y", y + "px");
+      setCoordinates({ x, y });
     }
   };
   return (
@@ -24,7 +24,13 @@ function Card({ projectTitle, description, logo, path }: CardProps) {
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className={`border-border relative mb-2 flex w-full cursor-pointer  items-center justify-between overflow-hidden rounded-md border bg-background-secondary  px-3 py-3  before:absolute before:left-[var(--x)] before:top-[var(--y)] before:h-[350px]  before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:bg-radial-gradient before:opacity-0 after:absolute after:inset-0.5 after:z-0 after:rounded-md after:opacity-70 after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:bg-background-secondary   after:hover:duration-[250ms]`}
+        style={
+          {
+            "--x": `${coordinates.x + "px"}`,
+            "--y": `${coordinates.y + "px"}`,
+          } as React.CSSProperties
+        }
+        className={`relative mb-2 flex w-full cursor-pointer items-center  justify-between overflow-hidden rounded-md border border-border bg-background-secondary  px-3 py-3  before:absolute before:left-[var(--x)] before:top-[var(--y)] before:h-[350px]  before:w-[500px] before:translate-x-[-50%] before:translate-y-[-50%] before:bg-radial-gradient before:opacity-0 after:absolute after:inset-[1px] after:z-0 after:rounded-md after:opacity-70 after:transition before:hover:opacity-100 before:hover:transition before:hover:duration-500 after:hover:bg-background-secondary   after:hover:duration-[250ms]`}
       >
         <TextSection projectTitle={projectTitle} description={description} />
         <LogoSection logo={logo} />

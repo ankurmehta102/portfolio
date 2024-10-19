@@ -7,10 +7,12 @@
 @font-face {
   font-family: "Oswald";
   src: url("/public/fonts/Oswald-VariableFont_wght.ttf") format("woff2");
+  font-display: block;
 }
 @font-face {
   font-family: "Quattrocento";
   src: url("/public/fonts/QuattrocentoSans-Regular.ttf") format("woff2");
+  font-display: block;
 }
 @layer base {
   body {

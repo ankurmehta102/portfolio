@@ -65,11 +65,7 @@ function LogoSection({ logo }: Pick<CardProps, "logo">) {
   return (
     <div id="image-section" className="z-10  flex  items-center justify-end  ">
       <div className=" h-28 w-28 ">
-        <img
-          src={logo}
-          alt=""
-          className="h-full w-full rounded-md object-fill"
-        />
+        <img src={logo} alt="" className="h-28 w-28 rounded-md object-fill" />
       </div>
     </div>
   );

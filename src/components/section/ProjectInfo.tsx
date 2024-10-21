@@ -2,16 +2,17 @@ import Text from "../ui/Text";
 import Heading from "../ui/Heading";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
+import { projectId } from "../../types";
 
 interface ProjectInfoProps {
   title: string;
   description: string;
+  id: string;
   link?: string;
 }
 
-function ProjectInfo({ title, description, link }: ProjectInfoProps) {
+function ProjectInfo({ title, description, link, id }: ProjectInfoProps) {
   const handleClick = () => {
-    console.log("Github button clicked.");
     window.open(link, "_blank");
   };
   return (
@@ -26,7 +27,20 @@ function ProjectInfo({ title, description, link }: ProjectInfoProps) {
       }}
     >
       <Heading variant="Heading">{title}</Heading>
-      <Text liteText={true} className="mt-2 text-pretty leading-height-3">
+      <Text liteText={true} className="mt-2  text-pretty leading-height-3">
+        {id !== projectId.gallery && (
+          <span>
+            At{" "}
+            <a
+              href="https://www.linkedin.com/company/tru-india/"
+              target="_blank"
+              className="font-bold text-white underline"
+            >
+              Tru India
+            </a>
+            ,{" "}
+          </span>
+        )}
         {description}
       </Text>
       {link && (

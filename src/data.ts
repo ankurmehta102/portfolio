@@ -16,7 +16,7 @@ export const AdminPortalData = {
   id: 1,
   title: "Admin Portal",
   description:
-    "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
+    "I played a key role in developing a unified e-commerce data platform, integrating the website, mobile app, and kiosks to manage user and store creation, oversee kiosk updates, and generate detailed order and transaction reports.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
   link: "",
@@ -42,7 +42,7 @@ export const orderManagementData = {
   id: 2,
   title: "Order Management System",
   description:
-    "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
+    "I worked on an Order Management System that manages an order's entire lifecycle, from the initial placement to the final fulfilment. Orders were received from three sources: website, mobile app, and the kiosk app.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
   link: "",
@@ -68,9 +68,9 @@ cookie-based authentication, reducing the risk of XSS
 };
 export const ImageGalleryData = {
   id: 3,
-  title: "Image Gallery",
+  title: "PicSafe",
   description:
-    "At Mysense, I worked on a unified data platform for e-commerce (website,mobile app, kiosks) handling user/store creation, kiosk updates, andorder/transaction reporting.",
+    "This is my personal project, a collection of APIs designed to efficiently store and manage images. It focuses on providing a robust solution for handling images in a scalable and organized manner.",
   techStack:
     "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
   link: "https://github.com/ankurmehta102/image-gallery-backend",
@@ -80,6 +80,7 @@ export const ImageGalleryData = {
         "CDN support.",
         "User registration and bulk images upload support.",
         "Role based authentication and authorization.",
+        "Environment file validation and all best practices are being followed.",
       ],
     },
   ],
@@ -90,7 +91,7 @@ export const CardDetails = [
     id: 2,
     projectTitle: "Order Management System",
     description:
-      "A web application to oversee the complete order lifecycle, from initial placement to final fulfillment.",
+      "A web application for managing the entire order lifecycle, from placement to fulfillment.",
     logo: orderManagement,
     path: "projects/order-management",
   },

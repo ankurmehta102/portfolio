@@ -47,6 +47,7 @@ function ProjectDescriptionPage() {
         <ProjectInfo
           title={projectData.title}
           description={projectData.description}
+          id={projectId}
           link={projectData.link}
         />
         <TechStack techStack={projectData.techStack} />

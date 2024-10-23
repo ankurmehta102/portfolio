@@ -1,5 +1,6 @@
 import Heading from "../ui/Heading";
 import { SkillsData } from "../../data";
+import { twMerge } from "tailwind-merge";
 
 function Skills() {
   return (
@@ -11,7 +12,10 @@ function Skills() {
         {SkillsData.map((skill) => {
           return (
             <div
-              className={`${skill.className} flex cursor-default flex-col items-center justify-center rounded-md border border-border bg-background-secondary py-6 text-grey transition duration-200`}
+              className={twMerge(
+                `flex cursor-default flex-col items-center justify-center rounded-md border border-border bg-background-secondary py-6 text-grey transition duration-200`,
+                skill.className,
+              )}
             >
               {<skill.icon size={skill.iconSize} />}
               <div className=" flex items-center">

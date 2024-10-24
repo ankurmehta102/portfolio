@@ -5,10 +5,7 @@ import Text from "../ui/Text";
 
 function Bio() {
   function handleResumeClick() {
-    window.open(
-      "https://drive.google.com/file/d/1qdmCh-CM7-RRiShYT8zDrOlMmYn2ofwg/view?usp=sharing",
-      "_blank",
-    );
+    window.open(import.meta.env.VITE_RESUME_LINK, "_blank");
   }
   return (
     <div className="flex w-full flex-col items-center justify-center">

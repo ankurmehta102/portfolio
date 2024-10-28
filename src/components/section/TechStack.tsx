@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import Heading from "../ui/Heading";
 import Text from "../ui/Text";
+import { IconType } from "react-icons";
 
 interface TechStackProps {
-  techStack: string;
+  techStack: { tech: string; icon: IconType }[];
 }
 
 function TechStack({ techStack }: TechStackProps) {
@@ -24,9 +25,21 @@ function TechStack({ techStack }: TechStackProps) {
       }}
     >
       <Heading variant="SubHeading">Tech Stack</Heading>
-      <Text liteText={true} className="mt-2">
+      {/* <Text liteText={true} className="mt-2">
         {techStack}
-      </Text>
+      </Text> */}
+      <div className="mt-4 grid grid-cols-3 gap-6 ">
+        {techStack.map((data) => {
+          return (
+            <div className="flex items-center space-x-2 text-grey">
+              <data.icon size={21} />
+              <Text liteText={true} className="">
+                {data?.tech}
+              </Text>
+            </div>
+          );
+        })}
+      </div>
     </motion.section>
   );
 }

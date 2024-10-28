@@ -27,7 +27,7 @@ function ProjectInfo({ title, description, link, id }: ProjectInfoProps) {
       }}
     >
       <Heading variant="Heading">{title}</Heading>
-      <Text liteText={true} className="mt-2  text-pretty leading-height-3">
+      <Text liteText={true} className="mt-4  text-pretty leading-height-3">
         {id !== projectId.gallery && (
           <span>
             At{" "}

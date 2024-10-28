@@ -17,8 +17,15 @@ export const AdminPortalData = {
   title: "Admin Portal",
   description:
     "I played a key role in developing a unified e-commerce data platform, integrating the website, mobile app, and kiosks to manage user and store creation, oversee kiosk updates, and generate detailed order and transaction reports.",
-  techStack:
-    "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  techStack: [
+    { tech: "React.js", icon: FaReact },
+    { tech: "Redux.js", icon: SiRedux },
+    { tech: "Nest.js", icon: SiNestjs },
+    { tech: "MsSQL", icon: FaDatabase },
+    { tech: "Typescript", icon: SiTypescript },
+    { tech: "HTML", icon: SiHtml5 },
+    { tech: "CSS", icon: SiCss3 },
+  ],
   link: "",
   achievements: [
     {
@@ -43,8 +50,15 @@ export const orderManagementData = {
   title: "Order Management System",
   description:
     "I worked on an Order Management System that manages an order's entire lifecycle, from the initial placement to the final fulfilment. Orders were received from three sources: website, mobile app, and the kiosk app.",
-  techStack:
-    "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  techStack: [
+    { tech: "React.js", icon: FaReact },
+    { tech: "Redux.js", icon: SiRedux },
+    { tech: "Nest.js", icon: SiNestjs },
+    { tech: "MsSQL", icon: FaDatabase },
+    { tech: "Typescript", icon: SiTypescript },
+    { tech: "HTML", icon: SiHtml5 },
+    { tech: "CSS", icon: SiCss3 },
+  ],
   link: "",
   achievements: [
     {
@@ -71,8 +85,11 @@ export const ImageGalleryData = {
   title: "PicSafe",
   description:
     "This is my personal project, a collection of APIs designed to efficiently store and manage images. It focuses on providing a robust solution for handling images in a scalable and organized manner.",
-  techStack:
-    "React.js, Redux.js, Nest.js(Node.js), MsSQL, Typescript, HTML, CSS",
+  techStack: [
+    { tech: "Nest.js", icon: SiNestjs },
+    { tech: "MsSQL", icon: FaDatabase },
+    { tech: "Typescript", icon: SiTypescript },
+  ],
   link: "https://github.com/ankurmehta102/image-gallery-backend",
   features: [
     {

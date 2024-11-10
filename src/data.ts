@@ -1,6 +1,5 @@
 import admin from "/images/admin.webp";
 import orderManagement from "/images/order-management.webp";
-import kioskSettings from "/images/kiosk_settings.webp";
 import picSafe from "/images/pic_safe.webp";
 import { SiNestjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -34,7 +33,6 @@ export const AdminPortalData = {
         `Our team managed over 400 kiosks across different stores. When clients reported issues, we had to manually request critical information like the kiosk's printer configuration, kiosk ID, and app version, which slowed down the debugging process.`,
         `To address this, I developed an automated system that gathered the necessary kiosk details automatically. This streamlined the debugging process, reducing response time and increasing efficiency.`,
       ],
-      taskImage: kioskSettings,
     },
     {
       taskHeading: "2. Email Based Password Reset",
@@ -68,7 +66,6 @@ export const orderManagementData = {
 Realtime Database, leading to a 30% reduction in order
 fulfillment time.`,
       ],
-      taskImage: kioskSettings,
     },
     {
       taskHeading: "2. Cookie based authentication",

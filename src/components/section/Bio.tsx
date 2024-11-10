@@ -2,10 +2,17 @@ import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
+import ReactGA from "react-ga";
 
 function Bio() {
+  const resume_link = import.meta.env.VITE_RESUME_LINK;
   function handleResumeClick() {
-    window.open(import.meta.env.VITE_RESUME_LINK, "_blank");
+    ReactGA.event({
+      category: "Resume_Button",
+      action: "click",
+      label: `link:${resume_link}`,
+    });
+    window.open(resume_link, "_blank");
   }
   return (
     <div className="flex w-full flex-col items-center justify-center">

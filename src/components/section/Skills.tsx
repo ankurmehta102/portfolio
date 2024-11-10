@@ -16,6 +16,7 @@ function Skills() {
                 `flex cursor-default flex-col items-center justify-center rounded-md border border-border bg-background-secondary py-6 text-grey transition duration-200`,
                 skill.className,
               )}
+              key={skill.name}
             >
               {<skill.icon size={skill.iconSize} />}
               <div className=" flex items-center">

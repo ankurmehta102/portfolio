@@ -31,7 +31,10 @@ function TechStack({ techStack }: TechStackProps) {
       <div className="mt-4 grid grid-cols-3 gap-6 ">
         {techStack.map((data) => {
           return (
-            <div className="flex items-center space-x-2 text-grey">
+            <div
+              className="flex items-center space-x-2 text-grey"
+              key={data?.tech}
+            >
               <data.icon size={21} />
               <Text liteText={true} className="">
                 {data?.tech}

@@ -1,6 +1,6 @@
 import MainLayout from "./components/layout/MainLayout";
 import { Outlet } from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 ReactGA.initialize(import.meta.env.VITE_ANALTTICS_ID);
 

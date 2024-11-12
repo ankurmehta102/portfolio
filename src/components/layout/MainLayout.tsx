@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   useEffect(() => {
-    ReactGA.pageview(location.pathname);
+    ReactGA.send({ hitType: "pageview", page: `${location.pathname}` });
   }, [location.pathname]);
   return (
     <div className="flex min-h-screen w-full justify-center   bg-rg-background px-1 py-6 laptop:px-0 ">

@@ -3,7 +3,7 @@ import Heading from "../ui/Heading";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
 import { projectId } from "../../types";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 interface ProjectInfoProps {
   title: string;
@@ -15,8 +15,8 @@ interface ProjectInfoProps {
 function ProjectInfo({ title, description, link, id }: ProjectInfoProps) {
   const handleClick = () => {
     ReactGA.event({
-      category: "Github_Button",
-      action: "click",
+      category: "Button",
+      action: `Github_Button_Click`,
       label: `link:${link}`,
     });
     window.open(link, "_blank");

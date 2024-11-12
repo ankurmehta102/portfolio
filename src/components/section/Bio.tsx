@@ -2,14 +2,14 @@ import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function Bio() {
   const resume_link = import.meta.env.VITE_RESUME_LINK;
   function handleResumeClick() {
     ReactGA.event({
-      category: "Resume_Button",
-      action: "click",
+      category: "Button",
+      action: "Resume_Button_Click",
       label: `link:${resume_link}`,
     });
     window.open(resume_link, "_blank");

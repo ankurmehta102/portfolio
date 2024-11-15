@@ -1,15 +1,13 @@
 import { projectId } from "./types";
 
 export const loadData = async (project: string) => {
+  const data = await import("./data");
   if (project === projectId.admin) {
-    const { AdminPortalData } = await import("./data");
-    return AdminPortalData;
+    return data.AdminPortalData;
   } else if (project === projectId.oms) {
-    const { orderManagementData } = await import("./data");
-    return orderManagementData;
+    return data.orderManagementData;
   } else if (project === projectId.gallery) {
-    const { ImageGalleryData } = await import("./data");
-    return ImageGalleryData;
+    return data.ImageGalleryData;
   } else {
     throw new Error("Invalid project type");
   }

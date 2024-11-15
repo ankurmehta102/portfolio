@@ -7,14 +7,19 @@ import { TaskHeading } from "../types";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import NotFoundPage from "./NotFoundPage";
 
 function ProjectDescriptionPage() {
-  const [projectData, projectId] = useFetchData();
+  const [projectData, projectId, error] = useFetchData();
   const navigate = useNavigate();
 
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  if (error) {
+    return <NotFoundPage />;
+  }
 
   const taskSectionHeading = projectData.achievements
     ? TaskHeading.ACHIEVEMENTS

@@ -16,13 +16,14 @@ function NotFoundPage() {
       </h1>
       <Text
         liteText={true}
-        className=" text-3xl font-bold leading-height-3 tracking-widest laptop:text-3xl"
+        className=" text-3xl  leading-height-3  laptop:text-3xl"
       >
         Page Not Found
       </Text>
-      <Button onClick={handleClick} className=" px-4">
-        <div className="flex items-center justify-center space-x-1">
-          <IoArrowBackCircle size={25} /> <p className="text-2xl">Back</p>
+      <Button onClick={handleClick} className="">
+        <div className="flex items-center space-x-1">
+          <IoArrowBackCircle size={30} />{" "}
+          <p className="font-Primary text-[1.35rem]">Back</p>
         </div>
       </Button>
     </div>

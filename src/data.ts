@@ -1,6 +1,6 @@
-import admin from "/images/admin.webp";
-import orderManagement from "/images/order-management.webp";
-import picSafe from "/images/pic_safe.webp";
+import admin from "./assets/images/admin.webp";
+import orderManagement from "./assets/images/order-management.webp";
+import picSafe from "./assets/images/pic_safe.webp";
 import { SiNestjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiHtml5 } from "react-icons/si";

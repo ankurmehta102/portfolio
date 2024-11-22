@@ -1,4 +1,4 @@
-import Profile from "/images/profile.webp";
+import Profile from "../../assets/images/profile.webp";
 import Text from "../ui/Text";
 import Heading from "../ui/Heading";
 

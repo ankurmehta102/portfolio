@@ -1,17 +1,16 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");*/
-/* @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: "Oswald";
-  src: url("/public/fonts/Oswald-VariableFont_wght.ttf") format("woff2");
+  font-weight: bolder;
+  src: url("./assets/fonts/Oswald-VariableFont_wght.ttf") format("woff2");
   font-display: block;
 }
 @font-face {
   font-family: "Quattrocento";
-  src: url("/public/fonts/QuattrocentoSans-Regular.ttf") format("woff2");
+  src: url("./assets/fonts/QuattrocentoSans-Regular.ttf") format("woff2");
   font-display: block;
 }
 @layer base {

@@ -60,7 +60,7 @@ const Feature = ({
   listStyle,
 }: TaskProps) => {
   return (
-    <div className=" space-y-4 rounded border border-border bg-background-secondary p-4">
+    <div className=" space-y-0 rounded border border-border bg-background-secondary p-4">
       {taskHeading && (
         <h1 className=" text-2xl font-bold text-white">{taskHeading}</h1>
       )}
@@ -69,7 +69,7 @@ const Feature = ({
       >
         {taskDescription.map((listData) => (
           <Text liteText={true} className="leading-height-3">
-            <li className={`text-balance`}>{listData}</li>
+            <li className={`text-pretty`}>{listData}</li>
           </Text>
         ))}
       </ul>

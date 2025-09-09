@@ -1,6 +1,6 @@
 import Heading from "../ui/Heading";
 import { SkillsData } from "../../data";
-import { twMerge } from "tailwind-merge";
+import Text from "../ui/Text";
 
 function Skills() {
   return (
@@ -8,22 +8,17 @@ function Skills() {
       <Heading variant="SubHeading" className="">
         Technical Skills
       </Heading>
-      <div id="skills-icons" className="mt-2 grid grid-cols-3  gap-2">
-        {SkillsData.map((skill) => {
+      <div className="mt-4 grid w-full grid-cols-3 gap-6">
+        {SkillsData.map((data) => {
           return (
             <div
-              className={twMerge(
-                `flex cursor-default flex-col items-center justify-center rounded-md border border-border bg-background-secondary py-6 text-grey transition duration-200`,
-                skill.className,
-              )}
-              key={skill.name}
+              className="flex items-center space-x-2 text-grey"
+              key={data?.tech}
             >
-              {<skill.icon size={skill.iconSize} />}
-              <div className=" flex items-center">
-                <p className="mt-2 text-sm font-medium leading-height-2 tracking-wide laptop:text-xl">
-                  {skill.name}
-                </p>
-              </div>
+              <data.icon size={21} />
+              <Text liteText={true} className="">
+                {data?.tech}
+              </Text>
             </div>
           );
         })}

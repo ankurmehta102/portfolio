@@ -13,7 +13,7 @@ function SocialLinks() {
       <Icon
         link="https://www.linkedin.com/in/ankur9517/"
         target="_blank"
-        tooltipText="Linkdin"
+        tooltipText="Linkedin"
       >
         <FaLinkedinIn size={22} />
       </Icon>

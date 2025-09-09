@@ -8,7 +8,7 @@ function Projects() {
       <div className="w-full">
         <Heading variant="SubHeading">Projects</Heading>
       </div>
-      <div className="mt-2">
+      <div className="mt-4">
         {CardDetails.map((card) => (
           <Card
             key={card.id}

@@ -18,7 +18,7 @@
   font-weight: bold;
   padding: 0.3rem 0.7rem;
   border-radius: 0.5rem;
-  background: #d1d0ce;
+  background: #e5e7eb;
   transform-origin: bottom center;
 }
 
@@ -26,7 +26,7 @@
   content: "";
   --translate-y: calc(-100% - 14px);
   border: 10px solid transparent;
-  border-top-color: #d1d0ce;
+  border-top-color: #e5e7eb;
   transform-origin: top center;
 }
 

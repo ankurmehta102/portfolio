@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Heading from "../ui/Heading";
-import Text from "../ui/Text";
 import { IconType } from "react-icons";
+import TechGrid from "../ui/TechGrid";
 
 interface TechStackProps {
   techStack: { tech: string; icon: IconType }[];
@@ -28,21 +28,7 @@ function TechStack({ techStack }: TechStackProps) {
       {/* <Text liteText={true} className="mt-2">
         {techStack}
       </Text> */}
-      <div className="mt-4 grid grid-cols-3 gap-6 ">
-        {techStack.map((data) => {
-          return (
-            <div
-              className="flex items-center space-x-2 text-grey"
-              key={data?.tech}
-            >
-              <data.icon size={21} />
-              <Text liteText={true} className="">
-                {data?.tech}
-              </Text>
-            </div>
-          );
-        })}
-      </div>
+      <TechGrid gridData={techStack}></TechGrid>
     </motion.section>
   );
 }

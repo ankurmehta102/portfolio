@@ -1,8 +1,11 @@
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
-import SocialLinks from "../ui/SocialLinks";
 import Text from "../ui/Text";
 import ReactGA from "react-ga4";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+import Icon from "../ui/Icon";
 
 function Bio() {
   const resume_link = import.meta.env.VITE_RESUME_LINK;
@@ -34,9 +37,32 @@ function Bio() {
 
       <div className="flex w-full items-center justify-start">
         <Button onClick={handleResumeClick}>Resume</Button>
-        <div className="ml-5">
-          <SocialLinks />
+        <div
+          id="social-links"
+          className={`ml-5 flex w-full items-center justify-start space-x-4`}
+        >
+          <Icon
+            link="https://www.linkedin.com/in/ankur9517/"
+            target="_blank"
+            tooltipText="Linkedin"
+          >
+            <FaLinkedinIn size={22} />
+          </Icon>
+          <Icon
+            link="mailto:ankurmehta9517@gmail.com"
+            tooltipText="ankurmehta9517@gmail.com"
+          >
+            <SiGmail size={22} />
+          </Icon>
+          <Icon
+            link="https://github.com/ankurmehta102"
+            target="_blank"
+            tooltipText="Github"
+          >
+            <FaGithub size={22} />
+          </Icon>
         </div>
+        );
       </div>
     </div>
   );
